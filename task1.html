@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Arrays</h2>
+
+    <p id="array1"></p>
+    <p id="array2"></p>
+    <p id="array3"></p>
+    <p id="array4"></p>
+
+    <script>
+        const A = [0, 1, 2, 3, 4, 5];
+        document.getElementById("array1").innerHTML = A;
+
+        //reverse array
+        A.reverse();
+        document.getElementById("array2").innerHTML = A;
+
+        //Creating Second Array
+        const B = [5, 4, 3, 2, 1, 0];
+        document.getElementById("array3").innerHTML = B;
+
+        //reverse array
+        B.reverse();
+        document.getElementById("array4").innerHTML = B;
+
+    </script>
+
+</body>
+</html>
