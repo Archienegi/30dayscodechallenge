@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Finding Keys in Array</h2>
+    <p>find keys in first array</p>
+    <p>first array is A[] = {1,2,5,4,0}</p>
+    <p id="array"></p>
+    <p id="Arrays2"></p>
+
+    <script>
+        const A = ["1","2","5","4","0"];
+        let position = A.indexOf("4") + 1;
+
+        document.getElementById("array").innerHTML = "4 is found in position " + position;
+
+        <br>
+
+        const B = ["11","22","33","44"];
+        let position = B.indexOf("33") + 1;
+
+        document.getElementById("Arrays2").innerHTML = "33 is found in position " + position;
+
+    </script>
+</body>
+</html>

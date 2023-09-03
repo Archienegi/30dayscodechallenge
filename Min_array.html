@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Minimum in arrays</h2>
+    <p>Minimum in first array is <span id="firstarr"></span></p>
+    <p>Minumum in second array is <span id="Secondarr"></span></p>
+
+    <script>
+        const A = [0, 1, 2, 3, 4, 5];
+        document.getElementById("firstarr").innerHTML = myArrayMin(A);
+
+        function myArrayMin(arr) {
+            let len = arr.length;
+            let min = Infinity;
+
+            while (len--) {
+                if (arr[len] < min) {
+                    min = arr[len];
+                }
+            }
+            return min;
+        }
+
+        const B = [5, 4, 3, 2, 1, 0];
+        document.getElementById("Secondarr").innerHTML = myArrayMin(B);
+
+        function myArrayMin(arr) {
+            let len = arr.length;
+            let min = Infinity;
+
+            while (len--) {
+                if (arr[len] < min) {
+                    min = arr[len];
+                }
+            }
+            return min;
+        }
+
+    </script>
+</body>
+</html>
